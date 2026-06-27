@@ -183,6 +183,66 @@ export default function ProjectPage({ params }) {
           </div>
         </article>
 
+        {/* CTA — Right after case study, when intent is highest */}
+        <section className="relative bg-[#0d0b12] text-white overflow-hidden">
+          {/* Ambient glow orbs */}
+          <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-[#7c3aed]/20 rounded-full blur-[120px] pointer-events-none" />
+          <div className="absolute -bottom-20 -right-20 w-80 h-80 bg-[#7c3aed]/10 rounded-full blur-[100px] pointer-events-none" />
+
+          {/* Subtle grid texture */}
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(124,58,237,0.08),transparent_70%)] pointer-events-none" />
+
+          <div className="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-[120px] md:py-[160px]">
+            <ScrollReveal>
+              <div className="text-center max-w-2xl mx-auto space-y-10">
+                {/* Label */}
+                <p className="text-label-caps text-[#d2bbff] tracking-[0.15em]">
+                  READY TO START?
+                </p>
+
+                {/* Heading */}
+                <h2 className="font-display text-display-lg-mobile md:text-display-lg leading-[1.1] tracking-tighter text-balance">
+                  Let&apos;s Build{' '}
+                  <span className="text-[#eaddff]">Your</span>{' '}
+                  Next Win
+                </h2>
+
+                {/* Subtext */}
+                <p className="text-body-lg text-white/50 max-w-lg mx-auto leading-relaxed">
+                  No pressure. Just a focused 30‑minute conversation about your
+                  business, your challenges, and how we can solve them together.
+                </p>
+
+                {/* CTA Buttons */}
+                <div className="flex flex-col sm:flex-row justify-center gap-4 pt-4">
+                  <a
+                    href="https://calendar.app.google/1KCkejPsY4t9R9bX7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group inline-flex items-center justify-center gap-2 px-10 py-5 bg-[#630ed4] text-white rounded-full font-bold text-lg hover:bg-[#7c3aed] active:scale-[0.98] transition-all duration-200 shadow-[0_0_40px_rgba(99,14,212,0.35)] hover:shadow-[0_0_60px_rgba(124,58,237,0.55)]"
+                  >
+                    Book a Discovery Call
+                    <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">
+                      arrow_forward
+                    </span>
+                  </a>
+                  <a
+                    href="mailto:a.sulaimonmayowa@gmail.com"
+                    className="inline-flex items-center justify-center gap-2 px-10 py-5 rounded-full font-bold text-lg border border-white/20 text-white hover:bg-white/[0.08] active:scale-[0.98] transition-all duration-200"
+                  >
+                    Send an Email
+                  </a>
+                </div>
+
+                {/* Trust footnote */}
+                <p className="text-label-caps text-white/25 tracking-wider">
+                  JOIN 10+ BUSINESSES THAT SCALED WITH CUSTOM WEB &amp; AI SYSTEMS
+                </p>
+              </div>
+            </ScrollReveal>
+          </div>
+        </section>
+
         {/* Next Project */}
         {nextProject && (
           <section className="border-t border-on-surface/5">

@@ -44,7 +44,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/images/logos/sm-favicon.png" type="image/png" />
         <link rel="shortcut icon" href="/images/logos/sm-favicon.png" type="image/png" />
       </head>
-      <body className="font-body antialiased" style={{ fontFamily: "'Inter', sans-serif" }}>
+      <body className="font-body antialiased" style={{ fontFamily: "'Inter', sans-serif" }} suppressHydrationWarning>
         {children}
         <NetworkToggle />
       </body>
